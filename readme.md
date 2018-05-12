@@ -6,7 +6,6 @@ Returns all the query string params in a object or gets a single param by name
 
 ```
 import { queryString, allQueryStrings } from 'get-query-strings'
-
 ```
 
 ```
