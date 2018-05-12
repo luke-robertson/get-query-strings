@@ -1,0 +1,25 @@
+{
+  "name": "get-query-strings",
+  "version": "1.0.0",
+  "description": "Gets url query string parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designalchemy/get-query-strings.git"
+  },
+  "keywords": [
+    "query",
+    "string",
+    "url",
+    "parameters"
+  ],
+  "author": "Luke Robertson https://github.com/designalchemy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designalchemy/get-query-strings/issues"
+  },
+  "homepage": "https://github.com/designalchemy/get-query-strings#readme"
+}
