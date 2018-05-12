@@ -9,18 +9,14 @@ import { queryString, allQueryStrings } from 'get-query-strings'
 ```
 
 ```
-cosnt name = queryString('name')
-console.log(name)
-```
-
-```
 cosnt params = allQueryStrings()
-console.log(params)
+cosnt name = queryString('name')
+console.log(params, name)
 ```
 
 ## Authors
 
-*   **Luke Robertson** - [DesignAlchemy](https://github.com/designalchemy/React-to-Canvas-to-Video)
+*   **Luke Robertson** - [DesignAlchemy](https://github.com/designalchemy/)
 
 ## License
 
