@@ -31,6 +31,9 @@ console.log(name)
 luke
 ```
 
+Please note : decodeURIComponent is used on both the KEY and the VALUE
+
+
 ## Authors
 
 *   **Luke Robertson** - [DesignAlchemy](https://github.com/designalchemy/)
