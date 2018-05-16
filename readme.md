@@ -5,13 +5,30 @@ Returns all the query string params in a object or gets a single param by name
 ### Usage
 
 ```
-import { queryString, allQueryStrings } from 'get-query-strings'
+e.g http://my-awsome.website/welcome?name=luke&job=dev
+
+import { allQueryStrings, queryString } from 'get-query-strings'
 ```
 
 ```
-cosnt params = allQueryStrings()
-cosnt name = queryString('name')
-console.log(params, name)
+const params = allQueryStrings()
+
+const name = queryString('name')
+```
+
+```
+Output : 
+
+console.log(params)
+
+{
+	name: luke, 
+	job: dev
+}
+
+console.log(name)
+
+luke
 ```
 
 ## Authors
