@@ -22,8 +22,8 @@ Output :
 console.log(params)
 
 {
-	name: luke, 
-	job: dev
+  name: luke, 
+  job: dev
 }
 
 console.log(name)
