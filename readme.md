@@ -13,7 +13,12 @@ import { allQueryStrings, queryString } from 'get-query-strings'
 ```
 const params = allQueryStrings()
 
-const name = queryString('name')
+const params2 = allQueryStrings('?a=1&b=2')
+
+const name = queryString('name'),
+
+const name2 = queryString('name', '?name=luke'),
+
 ```
 
 ```
@@ -26,12 +31,24 @@ console.log(params)
   job: dev
 }
 
+console.log(params2)
+
+{
+  a: 1,
+  b: 2
+}
+
 console.log(name)
+
+luke
+
+console.log(name2)
 
 luke
 ```
 
 Please note : decodeURIComponent is used on both the KEY and the VALUE
+Also will add a ? to the string if missing and passed in manually
 
 
 ## Authors
