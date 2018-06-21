@@ -1,5 +1,8 @@
 const allQueryStrings = url => {
-  const data = url || location.search || {}
+  const data = url || location ? location.search : {} || {}
+  if (!data.length) {
+    return false
+  }
   const checkFirstChar = data.charAt(0) === '?'
   const finalString = checkFirstChar ? data : `?${data}`
   return parseString(finalString)
