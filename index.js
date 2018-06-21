@@ -1,14 +1,14 @@
 const allQueryStrings = url => {
-  const data = url || location ? location.search : {} || {}
-  if (!data.length) {
-    return false
+  if (!url && typeof location === 'undefined') {
+    return {}
   }
+  const data = url || location.search || {}
   const checkFirstChar = data.charAt(0) === '?'
   const finalString = checkFirstChar ? data : `?${data}`
   return parseString(finalString)
 }
 
-const parseString = data => 
+const parseString = data =>
   data
     .substr(1)
     .split('&')
