@@ -1,8 +1,8 @@
 const allQueryStrings = url => {
   if (!url && typeof location === 'undefined') {
-    return {}
+    return ''
   }
-  const data = url || location.search || {}
+  const data = url || location.search || ''
   const checkFirstChar = data.charAt(0) === '?'
   const finalString = checkFirstChar ? data : `?${data}`
   return parseString(finalString)
